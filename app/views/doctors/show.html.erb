@@ -1,0 +1,65 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @doctor.title %>
+</p>
+
+<p>
+  <b>Firstname:</b>
+  <%= @doctor.firstname %>
+</p>
+
+<p>
+  <b>Surname:</b>
+  <%= @doctor.surname %>
+</p>
+
+<p>
+  <b>Quals:</b>
+  <%= @doctor.quals %>
+</p>
+
+<p>
+  <b>Gmcno:</b>
+  <%= @doctor.gmcno %>
+</p>
+
+<p>
+  <b>Active:</b>
+  <%= @doctor.active %>
+</p>
+
+<p>
+  <b>Outoffice:</b>
+  <%= @doctor.outoffice %>
+</p>
+
+<p>
+  <b>Signature:</b>
+  <%= @doctor.signature %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @doctor.email %>
+</p>
+
+<p>
+  <b>Mobile:</b>
+  <%= @doctor.mobile %>
+</p>
+
+<p>
+  <b>Notifymethod:</b>
+  <%= @doctor.notifymethod %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%= @doctor.notes %>
+</p>
+
+
+<%= link_to 'Edit', edit_doctor_path(@doctor) %> |
+<%= link_to 'Back', doctors_path %>

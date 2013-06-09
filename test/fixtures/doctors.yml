@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  firstname: MyString
+  surname: MyString
+  quals: MyString
+  gmcno: MyString
+  active: false
+  outoffice: false
+  signature: MyText
+  email: MyString
+  mobile: MyString
+  notifymethod: MyString
+  notes: MyText
+
+two:
+  title: MyString
+  firstname: MyString
+  surname: MyString
+  quals: MyString
+  gmcno: MyString
+  active: false
+  outoffice: false
+  signature: MyText
+  email: MyString
+  mobile: MyString
+  notifymethod: MyString
+  notes: MyText

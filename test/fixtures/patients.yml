@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  firstname: MyString
+  surname: MyString
+  patientid: MyString
+  nhsno: MyString
+  active: false
+  signature: MyText
+  email: MyString
+  mobile: MyString
+  notifymethod: MyString
+  pmh: MyText
+  drugs: MyText
+  allergies: MyText
+  notes: MyText
+
+two:
+  title: MyString
+  firstname: MyString
+  surname: MyString
+  patientid: MyString
+  nhsno: MyString
+  active: false
+  signature: MyText
+  email: MyString
+  mobile: MyString
+  notifymethod: MyString
+  pmh: MyText
+  drugs: MyText
+  allergies: MyText
+  notes: MyText

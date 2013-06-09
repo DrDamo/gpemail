@@ -1,0 +1,31 @@
+<h1>Listing entries</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Summary</th>
+    <th>Content</th>
+    <th>Priority</th>
+    <th>Privatenote</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @entries.each do |entry| %>
+  <tr>
+    <td><%= entry.title %></td>
+    <td><%= entry.summary %></td>
+    <td><%= entry.content %></td>
+    <td><%= entry.priority %></td>
+    <td><%= entry.privatenote %></td>
+    <td><%= link_to 'Show', entry %></td>
+    <td><%= link_to 'Edit', edit_entry_path(entry) %></td>
+    <td><%= link_to 'Destroy', entry, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Entry', new_entry_path %>

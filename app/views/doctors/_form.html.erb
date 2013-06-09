@@ -1,0 +1,65 @@
+<%= form_for(@doctor) do |f| %>
+  <% if @doctor.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@doctor.errors.count, "error") %> prohibited this doctor from being saved:</h2>
+
+      <ul>
+      <% @doctor.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :firstname %><br />
+    <%= f.text_field :firstname %>
+  </div>
+  <div class="field">
+    <%= f.label :surname %><br />
+    <%= f.text_field :surname %>
+  </div>
+  <div class="field">
+    <%= f.label :quals %><br />
+    <%= f.text_field :quals %>
+  </div>
+  <div class="field">
+    <%= f.label :gmcno %><br />
+    <%= f.text_field :gmcno %>
+  </div>
+  <div class="field">
+    <%= f.label :active %><br />
+    <%= f.check_box :active %>
+  </div>
+  <div class="field">
+    <%= f.label :outoffice %><br />
+    <%= f.check_box :outoffice %>
+  </div>
+  <div class="field">
+    <%= f.label :signature %><br />
+    <%= f.text_area :signature %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :mobile %><br />
+    <%= f.text_field :mobile %>
+  </div>
+  <div class="field">
+    <%= f.label :notifymethod %><br />
+    <%= f.text_field :notifymethod %>
+  </div>
+  <div class="field">
+    <%= f.label :notes %><br />
+    <%= f.text_area :notes %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

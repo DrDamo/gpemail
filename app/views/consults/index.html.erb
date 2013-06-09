@@ -1,0 +1,29 @@
+<h1>Listing consults</h1>
+
+<table>
+  <tr>
+    <th>Patient</th>
+    <th>Firstdoc</th>
+    <th>Seconddoc</th>
+    <th>Status</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @consults.each do |consult| %>
+  <tr>
+    <td><%= consult.patient %></td>
+    <td><%= consult.firstdoc %></td>
+    <td><%= consult.seconddoc %></td>
+    <td><%= consult.status %></td>
+    <td><%= link_to 'Show', consult %></td>
+    <td><%= link_to 'Edit', edit_consult_path(consult) %></td>
+    <td><%= link_to 'Destroy', consult, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Consult', new_consult_path %>

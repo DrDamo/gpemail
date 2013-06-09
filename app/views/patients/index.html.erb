@@ -1,0 +1,49 @@
+<h1>Listing patients</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Firstname</th>
+    <th>Surname</th>
+    <th>Patientid</th>
+    <th>Nhsno</th>
+    <th>Active</th>
+    <th>Signature</th>
+    <th>Email</th>
+    <th>Mobile</th>
+    <th>Notifymethod</th>
+    <th>Pmh</th>
+    <th>Drugs</th>
+    <th>Allergies</th>
+    <th>Notes</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @patients.each do |patient| %>
+  <tr>
+    <td><%= patient.title %></td>
+    <td><%= patient.firstname %></td>
+    <td><%= patient.surname %></td>
+    <td><%= patient.patientid %></td>
+    <td><%= patient.nhsno %></td>
+    <td><%= patient.active %></td>
+    <td><%= patient.signature %></td>
+    <td><%= patient.email %></td>
+    <td><%= patient.mobile %></td>
+    <td><%= patient.notifymethod %></td>
+    <td><%= patient.pmh %></td>
+    <td><%= patient.drugs %></td>
+    <td><%= patient.allergies %></td>
+    <td><%= patient.notes %></td>
+    <td><%= link_to 'Show', patient %></td>
+    <td><%= link_to 'Edit', edit_patient_path(patient) %></td>
+    <td><%= link_to 'Destroy', patient, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Patient', new_patient_path %>
